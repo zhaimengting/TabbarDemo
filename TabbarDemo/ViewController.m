@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"哈哈哈");
+    NSLog(@"哈哈哈33333");
 }
 - (IBAction)loginOnclick:(UIButton *)sender {
     AppDelegate *tempAppDelegate =(AppDelegate *) [[UIApplication sharedApplication] delegate];
