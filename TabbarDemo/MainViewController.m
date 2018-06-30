@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    NSLog(@"呃呃呃呃呃");
 }
 
 - (void)didReceiveMemoryWarning {
