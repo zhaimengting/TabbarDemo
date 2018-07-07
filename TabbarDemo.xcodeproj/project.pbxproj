@@ -18,7 +18,10 @@
 		FADD705020D203C30005419C /* TabbarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADD704F20D203C30005419C /* TabbarDemoUITests.m */; };
 		FADD705F20D23DC90005419C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FADD705E20D23DC90005419C /* MainViewController.m */; };
 		FADD706220D23DFD0005419C /* CustNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FADD706120D23DFD0005419C /* CustNavBar.m */; };
-		FADD706520D23E380005419C /* CustTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FADD706420D23E380005419C /* CustTabBar.m */; };
+		FAF9F68620EB59BF007E6A4B /* CustTabBarC.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9F68520EB59BF007E6A4B /* CustTabBarC.m */; };
+		FAF9F6CA20ECBCE9007E6A4B /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9F6C920ECBCE9007E6A4B /* UserCenterViewController.m */; };
+		FAF9F6CD20ECBD41007E6A4B /* MakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9F6CC20ECBD41007E6A4B /* MakeViewController.m */; };
+		FAF9F6D020EDA9EA007E6A4B /* TabBarNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF9F6CF20EDA9EA007E6A4B /* TabBarNavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +63,14 @@
 		FADD705E20D23DC90005419C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		FADD706020D23DFD0005419C /* CustNavBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustNavBar.h; sourceTree = "<group>"; };
 		FADD706120D23DFD0005419C /* CustNavBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustNavBar.m; sourceTree = "<group>"; };
-		FADD706320D23E380005419C /* CustTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustTabBar.h; sourceTree = "<group>"; };
-		FADD706420D23E380005419C /* CustTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustTabBar.m; sourceTree = "<group>"; };
+		FAF9F68420EB59BF007E6A4B /* CustTabBarC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustTabBarC.h; sourceTree = "<group>"; };
+		FAF9F68520EB59BF007E6A4B /* CustTabBarC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustTabBarC.m; sourceTree = "<group>"; };
+		FAF9F6C820ECBCE9007E6A4B /* UserCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
+		FAF9F6C920ECBCE9007E6A4B /* UserCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
+		FAF9F6CB20ECBD41007E6A4B /* MakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeViewController.h; sourceTree = "<group>"; };
+		FAF9F6CC20ECBD41007E6A4B /* MakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeViewController.m; sourceTree = "<group>"; };
+		FAF9F6CE20EDA9EA007E6A4B /* TabBarNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarNavViewController.h; sourceTree = "<group>"; };
+		FAF9F6CF20EDA9EA007E6A4B /* TabBarNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarNavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,10 +128,16 @@
 				FADD705D20D23DC90005419C /* MainViewController.h */,
 				FADD705E20D23DC90005419C /* MainViewController.m */,
 				FADD702E20D203C10005419C /* Main.storyboard */,
+				FAF9F6CE20EDA9EA007E6A4B /* TabBarNavViewController.h */,
+				FAF9F6CF20EDA9EA007E6A4B /* TabBarNavViewController.m */,
+				FAF9F6CB20ECBD41007E6A4B /* MakeViewController.h */,
+				FAF9F6CC20ECBD41007E6A4B /* MakeViewController.m */,
+				FAF9F6C820ECBCE9007E6A4B /* UserCenterViewController.h */,
+				FAF9F6C920ECBCE9007E6A4B /* UserCenterViewController.m */,
 				FADD706020D23DFD0005419C /* CustNavBar.h */,
 				FADD706120D23DFD0005419C /* CustNavBar.m */,
-				FADD706320D23E380005419C /* CustTabBar.h */,
-				FADD706420D23E380005419C /* CustTabBar.m */,
+				FAF9F68420EB59BF007E6A4B /* CustTabBarC.h */,
+				FAF9F68520EB59BF007E6A4B /* CustTabBarC.m */,
 				FADD703420D203C30005419C /* Assets.xcassets */,
 				FADD703620D203C30005419C /* LaunchScreen.storyboard */,
 				FADD703920D203C30005419C /* Info.plist */,
@@ -280,12 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADD706520D23E380005419C /* CustTabBar.m in Sources */,
 				FADD703320D203C10005419C /* TabbarDemo.xcdatamodeld in Sources */,
+				FAF9F6CD20ECBD41007E6A4B /* MakeViewController.m in Sources */,
 				FADD702D20D203C10005419C /* ViewController.m in Sources */,
 				FADD706220D23DFD0005419C /* CustNavBar.m in Sources */,
 				FADD703B20D203C30005419C /* main.m in Sources */,
+				FAF9F6CA20ECBCE9007E6A4B /* UserCenterViewController.m in Sources */,
+				FAF9F6D020EDA9EA007E6A4B /* TabBarNavViewController.m in Sources */,
 				FADD705F20D23DC90005419C /* MainViewController.m in Sources */,
+				FAF9F68620EB59BF007E6A4B /* CustTabBarC.m in Sources */,
 				FADD702A20D203C10005419C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,13 +476,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKFW6WWR6U;
 				INFOPLIST_FILE = TabbarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoudasheng.TabbarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -475,13 +494,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NKFW6WWR6U;
 				INFOPLIST_FILE = TabbarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhoudasheng.TabbarDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

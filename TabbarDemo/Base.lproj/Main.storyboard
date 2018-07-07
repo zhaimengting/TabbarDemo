@@ -29,7 +29,7 @@
         <!--定制-->
         <scene sceneID="J92-ao-VlA">
             <objects>
-                <viewController id="R6o-JZ-W1V" sceneMemberID="viewController">
+                <viewController id="R6o-JZ-W1V" customClass="MakeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="CustTabBar" id="CyS-wt-Gnj" customClass="CustTabBar">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6b-pN-Wnn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-595" y="829"/>
+            <point key="canvasLocation" x="988" y="752"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jfp-2b-aEu">
@@ -102,7 +102,7 @@
         <!--个人中心-->
         <scene sceneID="Wbx-71-Jzu">
             <objects>
-                <viewController id="PMq-iM-6yb" sceneMemberID="viewController">
+                <viewController id="PMq-iM-6yb" customClass="UserCenterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="epR-d5-0vK">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,10 +131,27 @@
             </objects>
             <point key="canvasLocation" x="181" y="-56"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Nav View Controller-->
+        <scene sceneID="NEl-vn-xoJ">
+            <objects>
+                <navigationController restorationIdentifier="TabbarNav" storyboardIdentifier="TabbarNav" id="vGb-qu-KVa" customClass="TabBarNavViewController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t24-b9-8yu">
+                        <rect key="frame" x="0.0" y="20" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iz2-xo-Ir8" kind="relationship" relationship="rootViewController" id="2w3-2h-wBg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5IP-kX-yaz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1337" y="183"/>
+        </scene>
+        <!--Cust Tab BarC-->
         <scene sceneID="Edq-tq-oop">
             <objects>
-                <tabBarController storyboardIdentifier="tabbarC" id="iz2-xo-Ir8" sceneMemberID="viewController">
+                <tabBarController restorationIdentifier="CustTabBarC" storyboardIdentifier="CustTabBarC" id="iz2-xo-Ir8" customClass="CustTabBarC" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hGC-Db-KQU"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="af8-aT-SkI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

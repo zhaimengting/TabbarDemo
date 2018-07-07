@@ -25,11 +25,16 @@
 - (IBAction)loginOnclick:(UIButton *)sender {
     AppDelegate *tempAppDelegate =(AppDelegate *) [[UIApplication sharedApplication] delegate];
     //MainViewController *mainVC = [[MainViewController alloc]init];
-    //UINavigationController *mainNV = [[UINavigationController alloc]initWithNibName:@"CustNavBar" bundle:nil];
-    UITabBarController *tabbarC = [[UITabBarController alloc]initWithNibName:@"CustTabBar" bundle:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+   // UITabBarController *tabbarC = [[UITabBarController alloc]initWithNibName:@"CustTabBarC" bundle:[NSBundle mainBundle]];
+    //UITabBarController *tabbar = [storyboard instantiateViewControllerWithIdentifier:@"CustTabBarC"];
+    UINavigationController *tabbarNav = [storyboard instantiateViewControllerWithIdentifier:@"TabbarNav"];
     
-    //mainNV.tabBarController = tabbarC;
-    tempAppDelegate.window.rootViewController = tabbarC;
+    tempAppDelegate.window.rootViewController = tabbarNav;
+//    UINavigationController *mainNV = [[UINavigationController alloc]initWithNibName:@"CustNavBar" bundle:nil];
+//
+//
+//    tempAppDelegate.window.rootViewController = tabbarC;
 }
 
 
